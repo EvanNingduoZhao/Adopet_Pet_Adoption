@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font imports -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1 class="adopet">Adopet</h1>
+        <h3 class="subtitle1">Meet the Perfect Pet</h3>
+        <div class="subtitle2">from more than 17,000 animal shelters & rescues</div>
+        <div class = "banner">      
+            <div class="contact-form">
+                <h3 class="form-header">Tell Us What You are Looking For</h3>
+                <form action="index.html" autocomplete="off">
+
+                    <div class="input-container">
+                        <input type="text" name="zipcode" class="input" />
+                        <label for="">Zipcode</label>
+                        <span>Zipcode</span>
+                    </div>
+
+                    <div class="input-container">
+                        <select id="animal" name="animal" class="input">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                        </select>
+                        <label for="">Animal</label>
+                        <span>Animal</span>
+                    </div>
+
+                    <div class="input-container">
+                        <select id="breed" name="breed" class="input">
+                            <option value="husky">Husky</option>
+                            <option value="labrador">Labrador</option>
+                        </select>
+                        <label for="">Breed</label>
+                        <span>Breed</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="age" class="input"></input>
+                        <label for="">Max Age</label>
+                        <span>Max Age</span>
+                    </div>
+
+                    <input type="submit" value="Search" class="btn" />
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
