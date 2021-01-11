@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const pets = require('../../Pets');
 const path = require('path');
+var cors = require('cors')
+
+// enable cors middleware on all routes
+router.use(cors())
 
 //get all pets' data
 router.get('/',(req,res)=>{

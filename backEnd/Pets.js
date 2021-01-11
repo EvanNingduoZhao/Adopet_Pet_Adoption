@@ -6,7 +6,7 @@ const pets=[{
     gender:'Male',
     age:8,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:2,
@@ -16,7 +16,7 @@ const pets=[{
     gender:'Female',
     age:7,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:3,
@@ -26,7 +26,7 @@ const pets=[{
     gender:'Female',
     age:6,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:4,
@@ -36,7 +36,7 @@ const pets=[{
     gender:'Female',
     age:1,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:5,
@@ -46,7 +46,7 @@ const pets=[{
     gender:'Male',
     age:1,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:6,
@@ -56,7 +56,7 @@ const pets=[{
     gender:'Female',
     age:8,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:7,
@@ -66,7 +66,7 @@ const pets=[{
     gender:'Male',
     age:9,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:8,
@@ -76,7 +76,7 @@ const pets=[{
     gender:'Male',
     age:5,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:9,
@@ -86,7 +86,7 @@ const pets=[{
     gender:'Female',
     age:4,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },
 {
     id:10,
@@ -96,7 +96,7 @@ const pets=[{
     gender:'Male',
     age:10,
     location:'Pittsburgh, PA',
-    zipcode:15213
+    zipcode:'15213'
 },]
 
 module.exports=pets;
