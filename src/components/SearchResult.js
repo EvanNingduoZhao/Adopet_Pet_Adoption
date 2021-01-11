@@ -2,7 +2,7 @@ import React, {useEffect,useState,useContext} from 'react'
 import Header from './Header'
 import axios from 'axios'
 import SearchCriteriaContext from './SearchCriteriaContext'
-
+import {Link} from 'react-router-dom'
 
 function SearchResult(props) {
     const searchCriteriaObj = useContext(SearchCriteriaContext)
@@ -20,7 +20,7 @@ function SearchResult(props) {
     const maxAge=parseInt(searchCriteriaObj.searchCriteria.maxAge)
 
     const [pets,setPets]=useState([])
-    const [petPics,setPetPics]=useState({})
+    // const [petPics,setPetPics]=useState({})
     useEffect(() => {
         axios.get("http://localhost:5000/api/pets")
         .then(res=>{
@@ -69,8 +69,8 @@ function SearchResult(props) {
                     return(
                         <div className="pet-result">
                             <img className="pet-pic" src={petPicURL} alt="Pet-Picture"/>
-                            <h3 className="pet-name">{pet.name}</h3>
-                            <div className="pet-sex-age">{pet.gender},{pet.age}</div>
+                            <Link to={`/pet/${pet.id}`} className="pet-name"> <h3>{pet.name}</h3></Link>
+                            <div className="pet-sex-age">{pet.gender}, {pet.age} yrs old</div>
                             <div className="pet-location">{pet.location}</div>
                         </div>
                     )

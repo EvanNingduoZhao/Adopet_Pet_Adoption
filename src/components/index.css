@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 *{
     margin:0px;
@@ -322,12 +324,109 @@ textarea {
 .pet-name{
     font-size:20px;
     font-family: 'Redressed', cursive;
+    text-decoration: none;
+    color:black;
+}
+.pet-name:hover{
+  color:rgb(93,93,93);
 }
 .pet-sex-age, .pet-location{
     font-size:15px;
     font-family: 'Libre Franklin', sans-serif;
 }
+.page-left{
+  margin-left:5%;
+  float:left;
+  width: 40%;
+  margin-top:3%;
+}
 
+.intro-pic{
+  margin-top:15%;
+}
+.go-back-button{
+  margin-left:2%;
+  color:#1abc9c;
+  font-size:1em;
+}
+
+.go-back-button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+.introduction{
+  font-family: 'Potta One', cursive;
+  font-size:2.5em;
+  margin-top:7%;
+}
+
+.pet-pic-detail{
+  border-radius: 10px;
+  width:25em;
+  margin-top:2%;
+  box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.facts-story{
+  float:right;
+  margin-left:1%;
+  width:50%
+}
+.section-title{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Potta One', cursive;
+  font-size:1.9em;
+  margin-left: 2%;
+}
+.facts-about-me{
+  margin-top:3em;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
+}
+.facts-about-me-content{
+  margin-top:0.5em;
+  display: grid;
+  grid-template-columns: 15% 35% 15% 35%;
+  grid-template-rows: 3em 3em 3em;
+  margin-left:5%;
+}
+.attribute-name{
+  line-height: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.5em;
+
+}
+
+
+
+.attribute{
+  margin-top:0.5em;
+  vertical-align: middle;
+}
+.my-story{
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
+  margin-top:1em;
+}
+
+.attribute, .story-content{
+  font-family: 'Architects Daughter', cursive;
+  font-size:1.2em;
+}
+
+.story-content{
+  margin-top: 1em;
+  text-indent: 2em;
+  margin-left: 2%;
+  margin-right:2%;
+}
   
   @media (max-width: 850px) {
     .form {

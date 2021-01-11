@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import SearchResult from "./components/SearchResult"
 import React, {Component} from 'react'
 import SearchCriteriaContext from "./components/SearchCriteriaContext"
+import PetDetailView from './components/PetDetailView';
 
 const searchCriteriaInitial = {}
 const searchCriteriaReducer = (state,action)=>{
@@ -38,6 +39,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home}/>
             <Route path="/result" component={SearchResult}/>
+            <Route path="/pet/:id" component={PetDetailView}/>
           </Switch>
         </Router>
       </div>
