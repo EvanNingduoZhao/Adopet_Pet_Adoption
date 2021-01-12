@@ -2,8 +2,7 @@
 
 Adopet is a pet adoption web application that allows users to search for pets that are available for adoption near their location. The web application is built with React in the front end and an Express.js server in the back end.
 
-![alt text][logo]
-[logo]: https://github.com/EvanNingduoZhao/Adopet_Pet_Adoption/blob/main/public/Adopet_homepage.png 
+![alt text](https://github.com/EvanNingduoZhao/Adopet_Pet_Adoption/blob/main/public/Adopet_homepage.png?raw=true)
 
 # Getting Started
 
