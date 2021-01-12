@@ -7,15 +7,6 @@ import React, {Component} from 'react'
 import SearchCriteriaContext from "./components/SearchCriteriaContext"
 import PetDetailView from './components/PetDetailView';
 
-const searchCriteriaInitial = {}
-const searchCriteriaReducer = (state,action)=>{
-  switch(action.type){
-    case 'update':
-      return action.data
-    default:
-      return state
-  }
-}
 
 class App extends Component {
   constructor(props) {
@@ -37,8 +28,11 @@ class App extends Component {
       <div className="App">
         <Router history ={history}>
           <Switch>
+            {/* Home component displays a form that let users enter their search criteria */}
             <Route path="/" exact component={Home}/>
+            {/* SearchResult component displays a list view of search results */}
             <Route path="/result" component={SearchResult}/>
+            {/* PetDetailView component display a detail view of a particular pet */}
             <Route path="/pet/:id" component={PetDetailView}/>
           </Switch>
         </Router>

@@ -1,15 +1,17 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from './Header';
 import axios from 'axios';
-import SearchCriteriaContext from './SearchCriteriaContext';
+
 
 
 function PetDetailView(props) {
+    // petInfo state is designed to store the pet's breed, weight, color, age, sex and story fetched from server
     const [petInfo,setPetInfo] = useState({})
     const petId = props.match.params['id']
     let petPicURL=`http://localhost:5000/api/pets/picture/${petId}`
-    console.log(petId)
     const leftAngleBracket = "<  "
+
+    // fetch pet information from server and store them in petInfo state
     useEffect(() => {
         axios.get(`http://localhost:5000/api/pets/${petId}`)
         .then(res=>{
@@ -22,30 +24,25 @@ function PetDetailView(props) {
         
     }, [])
 
-    useEffect(()=>{
-        console.log(petInfo)
-    },[petInfo])
-
-    const renderStory=(story)=>{
-        if(story.split(" ").length<200){
-            return (<p className="story-content">{petInfo.story}</p>)
-        }else{
-            let shortened = story.split(" ").slice(0,201).join(" ");
-            return (<div>
-                        <span className="story-content">{shortened}</span>
-                        <span className="show-more">Show More</span>
-                    </div>)
-        }
-    }
+    // set document title to include pet name
+    useEffect(() => {
+        document.title = `Adopet - ${petInfo.name}`
+     }, [petInfo]);
+    
     return (
         <div className="page-container">
             <Header/>
+
             <div className="page-left">
+                {/* go-back-button */}
                 <div className="go-back-button" onClick={()=>{
+                    // programmatically redirect users back to search result list view page
                     props.history.push({
                         pathname:'/result'
                     })
                 }}> {leftAngleBracket}Back to Results </div>
+
+                {/* self-intro message and pet picture */}
                 <div className="intro-pic">
                     <h1 className="introduction"> My name is {petInfo.name}! </h1>
                     <img className="pet-pic-detail" src={petPicURL}/>
@@ -53,6 +50,7 @@ function PetDetailView(props) {
             </div>
 
             <div className="facts-story">
+                {/* Facts About Me section */}
                 <div className="facts-about-me">
                     <div className="section-title">Facts About Me</div>
                     <div className="facts-about-me-content">
@@ -70,10 +68,11 @@ function PetDetailView(props) {
                         <span className='attribute'>{petInfo.gender}</span>
                     </div>
                 </div>
+
+                {/* My Story section */}
                 <div className="my-story">
                     <div className="section-title">My Story</div>
                     <p className="story-content">{petInfo.story}</p>
-                    {/* {renderStory(petInfo.story? petInfo.story : " ")} */}
                 </div>
             </div>
             
