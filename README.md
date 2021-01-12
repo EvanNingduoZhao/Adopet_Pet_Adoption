@@ -21,14 +21,14 @@ npm run dev
 
 3. Install front end npm packages and open the website:
 
-open a new terminal and type the commands below:
+    open a new terminal and type the commands below:
 ```
 cd Adopet_Pet_Adoption
 npm install
 npm start
 ```
 
-#Contact
+# Contact
 
 Evan Zhao - ningduoz@andrew.cmu.edu
 
