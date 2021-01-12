@@ -1,57 +1,60 @@
 const pets=[{
     id:1,
     name:'Blitzen',
-    animal:'dog',
+    animal:'Dog',
     breed:'Terrier',
     gender:'Male',
     age:8,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:20,
+    color:"Tan/Yellow/Fawn",
+    story:"Blitzen will make your heart soar! This bouncy boy is looking for a family to help him learn to be the best boy he can be. He will need to visit the dentist after he is adopted and our staff will be happy to discuss this with you. Even though the Christmas season is over, Blitzen could be the pup for you. Apply to meet him today! All meet and greets are by appointment only. Thank you for your interest in our adoptable animals! Due to the COVID-19 pandemic, we do require appointments to see our adoptable animals. Please complete the adoption application and a Customer Care Associate will be in contact with you. PLEASE NOTE: We ask that when you submit your application, that you are available to schedule an appointment within the next 24-48 hours."
 },
 {
     id:2,
     name:'Madonna',
-    animal:'dog',
+    animal:'Dog',
     breed:'Anatolian Shepherd',
     gender:'Female',
     age:7,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:25,
+    color:"Tan/Yellow/Fawn",
+    story:"OK, so I was named after a 60's song by the rescue lady we all call, HOT DOG CHICK. Lady Madonna, children (ALWAYS) at your feet....\" NOPE, NOT ANYMORE!!! \"Wonder how you will be able to make ends meet....\" NOPE, NOT ANYMORE!! \"Who finds the money, when you pay the rent.....\" NOPE. \"Did you think the money was Heaven sent??\" YUP!!! ABSOLUTELY!!! So when God's Dogs Rescue friends saved me I had been living in a JUNKYARD with ALL my boyfriends ;( Making puppies and living a starved life- both physically and socially. However, I am all past that part of my life and ready to move into my BEST CHAPTER, with YOU!!! I am a sweet girl, I can be shy at first but once I know you come with hot dogs as treats and love and patience, I will be the sweetest girl you know!! I am particular and will not do well with young children or cats. I am great with male dogs- not so much with other females- I like to be in charge. So I can be an only dog or be with a nice male dog and YOU, of course. Look me up, I can't help my previous situation, but I sure want to help my future situation!!! I have been waiting for just the right gig!! Local adoption fee is $200 (in TX) Out of state adoption fee is $400 (includes transport to your area)"
 },
 {
     id:3,
     name:'Foxy Lady',
-    animal:'dog',
+    animal:'Dog',
     breed:'Anatolian Shepherd',
     gender:'Female',
     age:6,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:26,
+    color:"Tan/Yellow/Fawn",
+    story:"Whoooooo I LOVE ME SOME JIMMY HENDRIX!!! He wrote a song, just about me!!! Who wouldn't love that?? Foxy Lady is a really accurate name for me, I wonder who came up with that name? I came in to the rescue after my SECOND stay in the pound :( Apparently the people who had me didn't appreciate my gorgeous personality or my Jimmi Hendrix roots.... but that is OK because my life has taken a HUGE turn for the better here! I eat EVERY DAY, have fresh water EVERY DAY and I play with lots of friends EVERY DAY! ..Life is good.. I am a young gal, about 2 yrs old, and 48 pounds when saved. I may be a little more like 50# now but I have a pretty medium sized frame. I am an Anatolian Shepherd/Husky mix. Cool, right? I run like the wind, play like a puppy and love like I have never been loved before! So if you are feeling lucky (well are you??), fill out the application and lets do lunch, for as long as we both shall live :D I am waiting..........................."
 },
 {
     id:4,
     name:'Abby',
-    animal:'dog',
+    animal:'Dog',
     breed:'Chihuahua',
     gender:'Female',
     age:1,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:25,
+    color:"Tan/Yellow/Fawn",
+    story:"I'm a chiweenie, I'm a chiweenie :) OR ONe Chiweenie, Two CHiweenie, Three chiweenie, FOUR.... You get it!!! Well maybe NOT. There are 9 OF US!!! 9 Chiweenie pups with ONE MISSION- FIND FOREVER FAMILIES!! We come in all colors and basically the same sizes (under 15#). We all come with happy Chiweenie attitudes and cute faces. We are 5 months old, all fixed up and ready for the FUN to begin! So hurry and apply, 9 pups can go in a BLINK! Local adoption fee is $250 (in TX) Out of state adoption fee is $500 (includes transport to your area)"
 },
+
 {
     id:5,
-    name:'Elliot',
-    animal:'dog',
-    breed:'Chihuahua',
-    gender:'Male',
-    age:1,
-    location:'Pittsburgh, PA',
-    zipcode:'15213'
-},
-{
-    id:6,
     name:'Dee Dee',
-    animal:'dog',
+    animal:'Dog',
     breed:'American Bulldog',
     gender:'Female',
     age:8,
@@ -62,44 +65,69 @@ const pets=[{
     story:"Did you know there are THREE D's in dog??? No, seriously!!! I have two of them already :) I am Dee Dee and I am the former girlfriend of Dennis, and the mom of Donna. The three of us were left like bags of trash you don't want after you move to a new home... We were left all alone in our backyard by our \"family\".... Fast Forward to today, we are SO SO HAPPY they left us behind!!! NO MORE babies for me, Donna too! And Dennis has a new girlfriend who can't make babies either, but he doesn't care!!! I am FREEEEEEEEEE I have a bully dog personality, with a little boxer mixed in there for fun. I am a medium sized girl, only 43 pounds when spayed. My old flame, Dennis, may actually be my brother (EWWWWWWW) as he looks very American Bulldog too. And Donna could be our \"love child\", ARGGGGHHHHHHHHHH But all kidding aside, I am a really neat girl, active is a good description. I would love to have a family who will take me out to all kinds of cool places, who will love me as the happy girl I am and wear me out daily. I can be picky about my other friends, but do get along with some of the dogs here, I would be good as an only dog or with another dog I like (mostly other males). We can hang on the couch, play in the yard or nap in the sun- whatever you like, I am down with it!!!! Local adoption is $200 (in TX) Out of state adoption fee is $400 (includes transport to your area included)"
 },
 {
-    id:7,
+    id:6,
     name:'Dennis',
-    animal:'dog',
+    animal:'Dog',
     breed:'American Bulldog',
     gender:'Male',
     age:9,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:26,
+    color:'White with Tan, Yellow',
+    story:"Dennis the menace was a pretty cute kid. Therefore I am cute too! I am an adult, with puppy like exuberance for life and food! I arrived at the rescue with my wife (Dee Dee) and our kid (Donna) after being left in our backyard when our \"family\" moved. Can you imagine? I gave them 3 yrs of devotion, and they just leave me like an old newspaper..... So, enough about my sorted past, lets look at my BRIGHT FUTURE!!! I am a handsome guy, full of love for life. I love female dogs, male dogs are more challenging because I am an alpha sort of dog, with the females I am fine- even dominant females like my Dee Dee. I am a good 60# but fairly underweight still. I am a good protector of your home and my people. I won't let those pesky neighbors over, unless you invited them ;) I have lots of fun running and playing and I would be a great outdoor adventure buddy! Lets get on the trails and go!!! Local adoption fee is $200. We would like him to stay in the area."
 },
 {
-    id:8,
+    id:7,
     name:'Skittle',
-    animal:'dog',
+    animal:'Dog',
     breed:'Alaskan Malamute',
     gender:'Male',
     age:5,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:61,
+    color:"White - with Tan, Yellow",
+    story:"I don't have a story yet"
 },
 {
-    id:9,
+    id:8,
     name:'Niki',
-    animal:'dog',
+    animal:'Dog',
     breed:'Alaskan Malamute',
     gender:'Female',
     age:4,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:59,
+    color:'Black',
+    story:"Well, HELLO!!! Did I already tell you my name?? I thought I did, but maybe I was dreaming?? I am Niki, one k please, and I am a GORGEOUS Husky girl who LOVES to play play play!!! Now, I started out with the rescue SO SO SKINNY. I was really having a hard time gaining weight but I am now definitely on my way to having a little 'junk in my trunk' :) I am going to make some family a wonderful friend, I could be a great friend to your other dog too. If you love huskies, I am the ONE!!! Reach out and apply to adopt me, I will go fast ;) Local adoption fee is $200 (in TX) Out of state adoption fee is $500 (includes transport to your area)"
 },
 {
-    id:10,
+    id:9,
     name:'Francis',
-    animal:'dog',
+    animal:'Dog',
     breed:'Chihuahua',
     gender:'Male',
     age:10,
     location:'Pittsburgh, PA',
-    zipcode:'15213'
+    zipcode:'15213',
+    weight:15,
+    color:'Yellow',
+    story:"Call HSCC at (814)535-6116 for more information about the adoption process."
+},
+{
+    id:10,
+    name:'Kit',
+    animal:'Cat',
+    breed:'Domestic Shorthair',
+    gender:'Female',
+    age:1,
+    location:'Pittsburgh, PA',
+    zipcode:'15213',
+    weight:8,
+    color:'Gray, Blue or Silver Tabby',
+    story:'Kit and her sister Kat were born to a feral mom and immediately handled and socialized. Kit is a little more shy and would love to be adopted with her sister if possible. They are both sweet and playful and love to be held on your lap. They are spayed up to date on vaccines and negative for leukemia/FIV. Special adoption fee for both is $100'
 },]
 
 module.exports=pets;

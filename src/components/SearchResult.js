@@ -53,6 +53,7 @@ function SearchResult(props) {
         }
     }
 
+
     return (
         <div className="page-container">
             <Header/>
@@ -60,7 +61,11 @@ function SearchResult(props) {
             <div className="modify-search">
                 <div className="modify-msg">Didn't find your perfect one?</div>
                 <p className="sub-modify-msg">Don't worry and modify your search here!</p>
-                <button className="modify-search-button">Modify Your Search</button>
+                <button className="modify-search-button" onClick={()=>{
+                     props.history.push({
+                        pathname:'/'
+                    })
+                }}>Modify Your Search</button>
             </div>
             <div className="result-container">
                 { pets.map((pet)=>{

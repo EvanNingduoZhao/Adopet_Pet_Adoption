@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+::placeholder { 
+  color: white;
+  opacity: 1; 
+}
+
 .page-container{
     /* margin-left:5%; */
     margin-right: 5%;
@@ -111,7 +116,11 @@ textarea {
     top: 50px;
     left: -13px;
   } */
-  
+  .formError{
+    color:#E3242B;
+    margin-top:0.3em;
+    text-align: center;
+  }
   form {
 
     z-index: 10;
@@ -314,8 +323,9 @@ textarea {
 
 .pet-pic{
     border-radius: 10px;
-    margin:5px
-
+    margin:5px;
+    width:250px;
+    height: 260px;
 }
 
 .pet-name, .pet-sex-age, .pet-location{
