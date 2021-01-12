@@ -21,9 +21,22 @@ function PetDetailView(props) {
         })
         
     }, [])
+
     useEffect(()=>{
         console.log(petInfo)
     },[petInfo])
+
+    const renderStory=(story)=>{
+        if(story.split(" ").length<200){
+            return (<p className="story-content">{petInfo.story}</p>)
+        }else{
+            let shortened = story.split(" ").slice(0,201).join(" ");
+            return (<div>
+                        <span className="story-content">{shortened}</span>
+                        <span className="show-more">Show More</span>
+                    </div>)
+        }
+    }
     return (
         <div className="page-container">
             <Header/>
@@ -60,6 +73,7 @@ function PetDetailView(props) {
                 <div className="my-story">
                     <div className="section-title">My Story</div>
                     <p className="story-content">{petInfo.story}</p>
+                    {/* {renderStory(petInfo.story? petInfo.story : " ")} */}
                 </div>
             </div>
             

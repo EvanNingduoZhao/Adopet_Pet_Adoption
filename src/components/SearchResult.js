@@ -58,30 +58,33 @@ function SearchResult(props) {
         <div className="page-container">
             <Header/>
             {render_result_title()}
-            <div className="modify-search">
-                <div className="modify-msg">Didn't find your perfect one?</div>
-                <p className="sub-modify-msg">Don't worry and modify your search here!</p>
-                <button className="modify-search-button" onClick={()=>{
-                     props.history.push({
-                        pathname:'/'
+            <div className="search-page-content">
+                <div className="modify-search">
+                    <div className="modify-msg">Didn't find your perfect one?</div>
+                    <p className="sub-modify-msg">Don't worry and modify your search here!</p>
+                    <button className="modify-search-button" onClick={()=>{
+                        props.history.push({
+                            pathname:'/'
+                        })
+                    }}>Modify Your Search</button>
+                </div>
+                <div className="result-container">
+                    { pets.map((pet)=>{
+                        console.log(pet)
+                        let petPicURL=`http://localhost:5000/api/pets/picture/${pet.id}`
+                        return(
+                            <div className="pet-result">
+                                <img className="pet-pic" src={petPicURL} alt="Pet-Picture"/>
+                                <Link to={`/pet/${pet.id}`} className="pet-name"> <h3>{pet.name}</h3></Link>
+                                <div className="pet-sex-age">{pet.gender}, {pet.age} yrs old</div>
+                                <div className="pet-location">{pet.location}</div>
+                            </div>
+                        )
                     })
-                }}>Modify Your Search</button>
+                    }
+                </div>
             </div>
-            <div className="result-container">
-                { pets.map((pet)=>{
-                    console.log(pet)
-                    let petPicURL=`http://localhost:5000/api/pets/picture/${pet.id}`
-                    return(
-                        <div className="pet-result">
-                            <img className="pet-pic" src={petPicURL} alt="Pet-Picture"/>
-                            <Link to={`/pet/${pet.id}`} className="pet-name"> <h3>{pet.name}</h3></Link>
-                            <div className="pet-sex-age">{pet.gender}, {pet.age} yrs old</div>
-                            <div className="pet-location">{pet.location}</div>
-                        </div>
-                    )
-                  })
-                }
-            </div>
+           
         </div>
     )
 }
